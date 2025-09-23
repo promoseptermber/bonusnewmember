@@ -1,183 +1,206 @@
 <!doctype html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PROMO Gratis Saldo 50.000 — Launching Situs YOWES JP</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>PROMO Gratis Saldo 50.000 — Launching Situs YOWESJP</title>
+  <meta name="description" content="Promo Gratis Saldo Rp50.000 Spesial Launching Web Terbaru YOWESJP untuk 1000 member pertama."/>
   <style>
     :root{
-      --bg:#0a1a3a;
-      --muted:#cfd8e3;
-      --btn1:#0b63d6;
-      --btn2:#28a745;
-      --btn3:#ffcc00;
-      --progress-bg:#2c3e50;
+      --bg:#f0f6ff; /* latar cerah */
+      --card:#003366; /* biru tua */
+      --btn1:#0b63d6; /* biru */
+      --btnNew:#9d50bb; /* ungu */
+      --btn2:#28a745; /* hijau */
+      --btn3:#ffcc00; /* emas */
     }
     *{box-sizing:border-box;margin:0;padding:0}
     body{
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
-      line-height:1.3;
-      background:#4a90e2;
+      background:var(--bg);
       color:#fff;
-      height:100vh;
       display:flex;
-      align-items:center;
       justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      padding:8px;
     }
     .card{
       width:100%;
       max-width:420px;
-      height:100vh;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      padding:10px;
-      background:var(--bg);
-      border-radius:0;
+      background:var(--card);
+      border-radius:14px;
+      box-shadow:0 6px 20px rgba(0,0,0,.4);
+      padding:12px;
       text-align:center;
     }
     h1{
-      font-size:clamp(18px,5vw,24px);
-      font-weight:800;
-      background:linear-gradient(90deg,#ffcc00,#ff6600);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
+      font-size:18px;
+      line-height:1.3;
+      color:#ffdd33; /* judul mencolok */
       margin-bottom:6px;
     }
     p.subinfo{
-      font-size:clamp(10px,2.5vw,12px);
-      color:var(--muted);
+      font-size:11px;
+      color:#cfd8e3;
+      margin-bottom:8px;
     }
-    header img{
-      max-width:150px;
-      margin:6px auto;
+    img{
+      width:100%;
+      max-width:200px;
+      height:auto;
       border-radius:8px;
+      margin:0 auto 8px;
       display:block;
     }
     .features{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:4px;
-      font-size:clamp(10px,2.5vw,12px);
+      font-size:12px;
+      color:#fff;
+      line-height:1.4;
+      margin-bottom:8px;
     }
-    .feature{
-      background:#174085;
-      padding:6px;
-      border-radius:6px;
+    .quota-bar{
+      background:#ddd;
+      border-radius:10px;
+      overflow:hidden;
+      height:14px;
+      margin:8px 0;
+    }
+    .quota-fill{
+      background:#ff4444;
+      height:100%;
+      width:100%;
+      transition:width 0.5s linear;
+    }
+    .quota-text{
+      font-size:12px;
+      margin-bottom:6px;
     }
     .buttons{
       display:flex;
       flex-direction:column;
-      gap:6px;
+      gap:8px;
     }
     .btn{
       padding:10px;
-      border-radius:8px;
+      border-radius:10px;
       font-weight:700;
-      font-size:clamp(12px,3vw,14px);
       text-decoration:none;
+      font-size:14px;
+      transition:transform 0.2s,box-shadow 0.2s;
       display:block;
-      transition:transform .2s;
     }
     .btn:hover{transform:scale(1.05)}
     .btn-1{background:var(--btn1);color:#fff}
-    .btn-2{background:var(--btn2);color:#fff}
-    .btn-3{background:var(--btn3);color:#000;animation:pulse 1.5s infinite}
-    .quota{font-size:clamp(12px,3vw,14px);margin-top:6px}
-    .progress-container{height:10px;border-radius:6px;background:var(--progress-bg);overflow:hidden}
-    .progress-fill{height:100%;transition:width .5s ease}
-    .alert-low{
-      font-size:clamp(12px,3vw,14px);
-      font-weight:800;
-      margin-top:4px;
-      color:#ff4d4d;
-      display:none;
-      animation:blink 1s infinite;
+    .btn-new{
+      background:var(--btnNew);
+      color:#fff;
+      animation:fadeAnim 2s infinite;
     }
-    h3.testi-title{font-size:clamp(12px,3vw,14px);margin:4px 0}
-    .testimonials{overflow:hidden;height:40px;position:relative}
-    .testi-wrapper{position:absolute;top:0;width:100%;animation:scrollTesti 12s linear infinite}
-    .testi{font-size:clamp(10px,2.5vw,12px);margin-bottom:4px}
-    footer{font-size:clamp(9px,2vw,11px);color:var(--muted);margin-top:4px}
-    @keyframes scrollTesti{0%{top:0}100%{top:-100%}}
-    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,204,0,0.7)}70%{box-shadow:0 0 0 10px rgba(255,204,0,0)}100%{box-shadow:0 0 0 0 rgba(255,204,0,0)}}
-    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+    .btn-2{background:var(--btn2);color:#fff}
+    .btn-3{
+      background:var(--btn3);
+      color:#000;
+      text-transform:uppercase;
+      animation:pulse 1.5s infinite;
+    }
+    @keyframes fadeAnim{
+      0%{opacity:1}
+      50%{opacity:0.5}
+      100%{opacity:1}
+    }
+    @keyframes pulse{
+      0%{box-shadow:0 0 0 0 rgba(255,204,0,0.7)}
+      70%{box-shadow:0 0 0 12px rgba(255,204,0,0)}
+      100%{box-shadow:0 0 0 0 rgba(255,204,0,0)}
+    }
+    .testimonials{
+      margin-top:8px;
+      overflow:hidden;
+      height:40px;
+      position:relative;
+      font-size:12px;
+    }
+    .testi-wrapper{
+      position:absolute;
+      top:0;
+      animation:scrollTesti 12s linear infinite;
+      width:100%;
+    }
+    .testi{
+      margin-bottom:6px;
+      color:#fff;
+    }
+    @keyframes scrollTesti{
+      0%{top:0}
+      100%{top:-100%}
+    }
+    footer{
+      font-size:11px;
+      color:#cfd8e3;
+      margin-top:6px;
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <header>
-      <h1>PROMO GRATIS SALDO 50.000<br>SPESIAL 1000 MEMBER PERTAMA</h1>
-      <p class="subinfo">SALDO DIBAGIKAN 1 OKTOBER, PALING LAMBAT 23:59 WIB.<br>PASTIKAN DATA VALID & TANPA KESAMAAN IP</p>
-      <img src="1758610219929.jpg" alt="Promo Spesial"/>
-    </header>
+    <h1>PROMO GRATIS SALDO 50.000<br/>SPESIAL LAUNCHING WEB TERBARU YOWESJP<br/>1000 MEMBER PERTAMA</h1>
+    <p class="subinfo">SALDO AKAN DIBAGIKAN DI TANGGAL 1 OKTOBER PALING LAMBAT JAM 23:59 WIB.<br/>PASTIKAN DATA VALID DAN TIDAK ADA KESAMAAN IP</p>
+    <img src="1758610219929.jpg" alt="Promo Spesial"/>
 
     <div class="features">
-      <div class="feature">✅ Bonus Rp50.000</div>
-      <div class="feature">✅ Tanpa syarat</div>
-      <div class="feature">✅ Bisa tarik bank/e-wallet</div>
-      <div class="feature">✅ Terbatas 1000 member</div>
+      ✅ Bonus langsung Rp50.000<br/>
+      ✅ Tanpa syarat<br/>
+      ✅ Bisa ditarik ke bank/e-wallet<br/>
+      ✅ Terbatas untuk 1000 member
     </div>
+
+    <div class="quota-text">Sisa kuota: <span id="quotaNum">356</span> orang</div>
+    <div class="quota-bar"><div class="quota-fill" id="quotaFill"></div></div>
 
     <div class="buttons">
       <a class="btn btn-1" href="https://bit.ly/Vipyowesjp" target="_blank">Klaim Bonus</a>
+      <a class="btn btn-new" href="https://bit.ly/Vipyowesjp" target="_blank">Klaim New Member</a>
       <a class="btn btn-2" href="https://bit.ly/Vipyowesjp" target="_blank">Daftar VIP Gratis</a>
       <a class="btn btn-3" href="https://bit.ly/Vipyowesjp" target="_blank">Buat Akun Gacor</a>
     </div>
 
-    <div class="quota">Sisa kuota: <span id="quotaNum">356</span> orang</div>
-    <div class="progress-container"><div class="progress-fill" id="progressFill"></div></div>
-    <div class="alert-low" id="alertLow">⚡ SEGERA KLAIM! KUOTA HAMPIR HABIS ⚡</div>
-
-    <h3 class="testi-title">Testimoni Member</h3>
-    <section class="testimonials">
+    <div class="testimonials" aria-label="Testimoni">
       <div class="testi-wrapper">
         <div class="testi">"Baru daftar langsung dapat saldo!" — Andi</div>
         <div class="testi">"Prosesnya gampang banget." — Sinta</div>
         <div class="testi">"Mantap, saldo langsung masuk." — Dedi</div>
         <div class="testi">"Terbukti, kuota makin menipis!" — Maya</div>
         <div class="testi">"Akhirnya kebagian promo!" — Rudi</div>
+        <div class="testi">"Saldo gratis cair cepat." — Lita</div>
       </div>
-    </section>
+    </div>
 
     <footer>
-      <p>⚠️ Isi data benar, kecurangan = anulir</p>
-      <p>Kontak: <strong>yowesjp official</strong></p>
+      ⚠️ Pastikan isi data benar, jika ada kecurangan saldo akan dianulir
     </footer>
   </div>
 
   <script>
-    (function(){
-      const quotaEl = document.getElementById('quotaNum');
-      const progressFill = document.getElementById('progressFill');
-      const alertLow = document.getElementById('alertLow');
-      const total = 1000;
-      let quota = 356;
+    // Kuota mulai dari 356 dan berkurang tiap detik
+    let quota = 356;
+    const quotaEl = document.getElementById('quotaNum');
+    const quotaFill = document.getElementById('quotaFill');
+    const maxQuota = 356;
 
-      function updateProgress(){
-        const percent = (quota / total) * 100;
-        progressFill.style.width = percent + "%";
-        if(quota < 100){
-          progressFill.style.background = "#e74c3c";
-          alertLow.style.display = "block";
-        } else if(quota < 200){
-          progressFill.style.background = "#f1c40f";
-          alertLow.style.display = "none";
-        } else {
-          progressFill.style.background = "#28a745";
-          alertLow.style.display = "none";
-        }
+    function updateQuota(){
+      quotaEl.textContent = quota;
+      quotaFill.style.width = (quota/maxQuota*100) + "%";
+    }
+
+    setInterval(()=>{
+      if(quota>0){
+        quota--;
+        updateQuota();
       }
-      updateProgress();
-      setInterval(()=>{
-        if(quota>0){
-          const dec = Math.floor(Math.random()*3)+1;
-          quota = Math.max(0,quota-dec);
-          quotaEl.textContent = quota;
-          updateProgress();
-        }
-      },1000);
-    })();
+    },1000);
+
+    updateQuota();
   </script>
 </body>
 </html>
