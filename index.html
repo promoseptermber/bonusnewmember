@@ -4,45 +4,71 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>PROMO Gratis Saldo 25.000 — Launching Situs YOWESJP</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root{
-      --bg:#e6f0ff;
-      --btn1:#0b63d6; /* biru */
-      --btnNew:#9d50bb; /* ungu */
-      --btn2:#28a745; /* hijau */
-      --btn3:#ffcc00; /* emas */
+      --bg:#f5f7fa;
+      --card-bg:#fff;
+      --text:#111;
+      --text-muted:#444;
+
+      --btn1:#1a3c6e;    /* navy elegan */
+      --btnNew:#6a1b9a;  /* ungu royal */
+      --btn2:#2e7d32;    /* hijau emerald */
+      --btn3:#c9a227;    /* emas klasik */
     }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:#0e141b;
+        --card-bg:#1c2430;
+        --text:#f5f7fa;
+        --text-muted:#bbb;
+
+        --btn1:#2c5a9e;
+        --btnNew:#8e44ad;
+        --btn2:#3ba352;
+        --btn3:#d4af37;
+      }
+    }
+
     *{box-sizing:border-box;margin:0;padding:0}
     body{
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial;
       background:var(--bg);
-      color:#111;
+      color:var(--text);
       display:flex;
       justify-content:center;
       align-items:center;
       min-height:100vh;
       padding:10px;
+      transition:background .3s,color .3s;
     }
     .card{
       width:100%;
       max-width:420px;
-      background:#fff;
+      background:var(--card-bg);
       border-radius:14px;
-      box-shadow:0 8px 25px rgba(0,0,0,.15);
+      box-shadow:0 8px 25px rgba(0,0,0,.2);
       padding:14px;
       text-align:center;
+      transition:background .3s;
     }
     h1{
+      font-family:'Playfair Display',serif;
       font-size:20px;
       margin-bottom:6px;
-      font-weight:900;
-      background:linear-gradient(45deg,#ff0057,#0b63d6);
+      font-weight:700;
+      background:linear-gradient(45deg,var(--btn1),var(--btn3));
       -webkit-background-clip:text;
       -webkit-text-fill-color:transparent;
     }
     .subinfo{
       font-size:12px;
-      color:#333;
+      color:var(--text-muted);
       margin-bottom:10px;
     }
     img{
@@ -74,8 +100,11 @@
       height:10px;
       margin-bottom:10px;
     }
+    @media (prefers-color-scheme: dark){
+      .quota-bar{background:#333;}
+    }
     .quota-fill{
-      background:#0b63d6;
+      background:var(--btn1);
       height:100%;
       width:100%;
       transition:width 0.5s linear;
@@ -87,37 +116,50 @@
       margin-bottom:12px;
     }
     .btn{
+      font-family:'Poppins',sans-serif;
       padding:10px;
       border-radius:10px;
-      font-weight:700;
+      font-weight:600;
       font-size:14px;
       text-decoration:none;
       display:block;
       color:#fff;
-      transition:transform .2s;
+      transition:transform .2s, box-shadow .2s;
     }
-    .btn:hover{transform:scale(1.05)}
+    .btn:hover{
+      transform:scale(1.04);
+      box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    }
     .btn-1{background:var(--btn1);}
     .btn-new{
       background:var(--btnNew);
-      animation:fadeAnim 2s infinite;
+      animation:fadeAnim 3s infinite;
     }
     .btn-2{background:var(--btn2);}
     .btn-3{
       background:var(--btn3);
-      color:#000;
-      animation:pulse 1.5s infinite;
+      color:#222;
+      animation:pulse 2.5s infinite;
       text-transform:uppercase;
     }
-    @keyframes fadeAnim{0%{opacity:1}50%{opacity:.5}100%{opacity:1}}
+    @media (prefers-color-scheme: dark){
+      .btn-3{color:#111;}
+    }
+    @keyframes fadeAnim{
+      0%{opacity:1}
+      50%{opacity:.7}
+      100%{opacity:1}
+    }
     @keyframes pulse{
-      0%{box-shadow:0 0 0 0 rgba(255,204,0,0.7)}
-      70%{box-shadow:0 0 0 12px rgba(255,204,0,0)}
-      100%{box-shadow:0 0 0 0 rgba(255,204,0,0)}
+      0%{box-shadow:0 0 0 0 rgba(201,162,39,0.6)}
+      70%{box-shadow:0 0 0 12px rgba(201,162,39,0)}
+      100%{box-shadow:0 0 0 0 rgba(201,162,39,0)}
     }
     h3{
+      font-family:'Playfair Display',serif;
       font-size:14px;
       margin:10px 0 6px;
+      color:var(--btn1);
     }
     .testimonials{
       height:60px;
@@ -141,6 +183,9 @@
       margin-bottom:6px;
       font-size:12px;
     }
+    @media (prefers-color-scheme: dark){
+      .testi{background:#2b333d;color:#eee;}
+    }
     .avatar{
       width:20px;
       height:20px;
@@ -152,7 +197,7 @@
       0%{top:0}
       100%{top:-100%}
     }
-    footer{margin-top:6px;font-size:11px;color:#444}
+    footer{margin-top:6px;font-size:11px;color:var(--text-muted)}
   </style>
 </head>
 <body>
