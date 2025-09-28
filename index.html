@@ -4,71 +4,49 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>PROMO Gratis Saldo 25.000 — Launching Situs YOWESJP</title>
-  
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
   <style>
     :root{
-      --bg:#f5f7fa;
-      --card-bg:#fff;
-      --text:#111;
-      --text-muted:#444;
-
+      --bg:#f5f7fa;      /* abu muda lembut */
       --btn1:#1a3c6e;    /* navy elegan */
       --btnNew:#6a1b9a;  /* ungu royal */
       --btn2:#2e7d32;    /* hijau emerald */
       --btn3:#c9a227;    /* emas klasik */
     }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg:#0e141b;
-        --card-bg:#1c2430;
-        --text:#f5f7fa;
-        --text-muted:#bbb;
-
-        --btn1:#2c5a9e;
-        --btnNew:#8e44ad;
-        --btn2:#3ba352;
-        --btn3:#d4af37;
-      }
-    }
-
     *{box-sizing:border-box;margin:0;padding:0}
     body{
-      font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      font-family:'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial;
       background:var(--bg);
-      color:var(--text);
+      color:#111;
       display:flex;
       justify-content:center;
       align-items:center;
       min-height:100vh;
       padding:10px;
-      transition:background .3s,color .3s;
     }
     .card{
       width:100%;
       max-width:420px;
-      background:var(--card-bg);
+      background:#fff;
       border-radius:14px;
-      box-shadow:0 8px 25px rgba(0,0,0,.2);
-      padding:14px;
+      box-shadow:0 8px 25px rgba(0,0,0,.15);
+      padding:16px;
       text-align:center;
-      transition:background .3s;
     }
     h1{
-      font-family:'Playfair Display',serif;
+      font-family:'Playfair Display', serif;
       font-size:20px;
-      margin-bottom:6px;
-      font-weight:700;
-      background:linear-gradient(45deg,var(--btn1),var(--btn3));
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
+      margin-bottom:12px;
+      font-weight:900;
+      color:#fff;
+      background:linear-gradient(90deg, #1a3c6e, #c9a227);
+      padding:12px 14px;
+      border-radius:12px;
+      line-height:1.4;
     }
     .subinfo{
       font-size:12px;
-      color:var(--text-muted);
+      color:#333;
       margin-bottom:10px;
     }
     img{
@@ -100,9 +78,6 @@
       height:10px;
       margin-bottom:10px;
     }
-    @media (prefers-color-scheme: dark){
-      .quota-bar{background:#333;}
-    }
     .quota-fill{
       background:var(--btn1);
       height:100%;
@@ -116,19 +91,19 @@
       margin-bottom:12px;
     }
     .btn{
-      font-family:'Poppins',sans-serif;
-      padding:10px;
-      border-radius:10px;
+      padding:8px 16px;
+      border-radius:999px; /* oval pill */
       font-weight:600;
-      font-size:14px;
+      font-size:13px;
       text-decoration:none;
-      display:block;
+      display:inline-block;
       color:#fff;
-      transition:transform .2s, box-shadow .2s;
+      transition:all .25s ease-in-out;
+      text-align:center;
     }
     .btn:hover{
-      transform:scale(1.04);
-      box-shadow:0 4px 12px rgba(0,0,0,0.2);
+      transform:translateY(-2px);
+      box-shadow:0 4px 12px rgba(0,0,0,0.15);
     }
     .btn-1{background:var(--btn1);}
     .btn-new{
@@ -142,24 +117,20 @@
       animation:pulse 2.5s infinite;
       text-transform:uppercase;
     }
-    @media (prefers-color-scheme: dark){
-      .btn-3{color:#111;}
-    }
     @keyframes fadeAnim{
       0%{opacity:1}
       50%{opacity:.7}
       100%{opacity:1}
     }
     @keyframes pulse{
-      0%{box-shadow:0 0 0 0 rgba(201,162,39,0.6)}
+      0%{box-shadow:0 0 0 0 rgba(201,162,39,0.7)}
       70%{box-shadow:0 0 0 12px rgba(201,162,39,0)}
       100%{box-shadow:0 0 0 0 rgba(201,162,39,0)}
     }
     h3{
-      font-family:'Playfair Display',serif;
+      font-family:'Playfair Display', serif;
       font-size:14px;
       margin:10px 0 6px;
-      color:var(--btn1);
     }
     .testimonials{
       height:60px;
@@ -178,13 +149,10 @@
       gap:6px;
       background:#f2f2f2;
       color:#000;
-      padding:6px 8px;
-      border-radius:8px;
+      padding:6px 10px;
+      border-radius:20px;
       margin-bottom:6px;
       font-size:12px;
-    }
-    @media (prefers-color-scheme: dark){
-      .testi{background:#2b333d;color:#eee;}
     }
     .avatar{
       width:20px;
@@ -197,7 +165,7 @@
       0%{top:0}
       100%{top:-100%}
     }
-    footer{margin-top:6px;font-size:11px;color:var(--text-muted)}
+    footer{margin-top:6px;font-size:11px;color:#444}
   </style>
 </head>
 <body>
