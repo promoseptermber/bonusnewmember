@@ -7,11 +7,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#f5f7fa;      /* abu muda lembut */
-      --btn1:#1a3c6e;    /* navy elegan */
-      --btnNew:#6a1b9a;  /* ungu royal */
-      --btn2:#2e7d32;    /* hijau emerald */
-      --btn3:#c9a227;    /* emas klasik */
+      --bg:#f5f7fa;
+      --btn1:#1a3c6e;
+      --btnNew:#6a1b9a;
+      --btn2:#2e7d32;
+      --btn3:#c9a227;
     }
     *{box-sizing:border-box;margin:0;padding:0}
     body{
@@ -81,8 +81,7 @@
     .quota-fill{
       background:var(--btn1);
       height:100%;
-      width:100%;
-      transition:width 0.5s linear;
+      width:0%; /* kuota habis */
     }
     .buttons{
       display:flex;
@@ -92,7 +91,7 @@
     }
     .btn{
       padding:8px 16px;
-      border-radius:999px; /* oval pill */
+      border-radius:999px;
       font-weight:600;
       font-size:13px;
       text-decoration:none;
@@ -106,21 +105,13 @@
       box-shadow:0 4px 12px rgba(0,0,0,0.15);
     }
     .btn-1{background:var(--btn1);}
-    .btn-new{
-      background:var(--btnNew);
-      animation:fadeAnim 3s infinite;
-    }
+    .btn-new{background:var(--btnNew);}
     .btn-2{background:var(--btn2);}
     .btn-3{
       background:var(--btn3);
       color:#222;
       animation:pulse 2.5s infinite;
       text-transform:uppercase;
-    }
-    @keyframes fadeAnim{
-      0%{opacity:1}
-      50%{opacity:.7}
-      100%{opacity:1}
     }
     @keyframes pulse{
       0%{box-shadow:0 0 0 0 rgba(201,162,39,0.7)}
@@ -170,58 +161,39 @@
 </head>
 <body>
   <div class="card">
-    <h1>PROMO GRATIS SALDO 25.000 SPESIAL LAUNCHING WEB YOWESJP UNTUK 1000 MEMBER PERTAMA</h1>
-    <p class="subinfo">SALDO AKAN DIBAGIKAN DI TANGGAL 1 OKTOBER PALING LAMBAT JAM 23:59 WIB. PASTIKAN DATA VALID DAN TIDAK ADA KESAMAAN IP</p>
+    <h1>PROMO GRATIS SALDO 25.000 SPESIAL LAUNCHING WEB YOWESJP</h1>
+    <p class="subinfo">⚠️ Kuota sudah HABIS. Promo ini tidak lagi tersedia.</p>
     <img src="ChatGPT Image Sep 28, 2025, 07_39_05 PM.png" alt="Promo Spesial" />
 
     <div class="features">
       <div>✅ Bonus Rp25.000</div>
-      <div>✅ Tanpa syarat deposit </div>
+      <div>✅ Tanpa syarat deposit</div>
       <div>✅ Bisa tarik bank/e-wallet</div>
-      <div>✅ Terbatas 1000 member</div>
+      <div>❌ Kuota HABIS</div>
     </div>
 
-    <div class="quota">Sisa kuota: <span id="quotaNum">HABIS</span> orang</div>
-    <div class="quota-bar"><div class="quota-fill" id="quotaFill"></div></div>
+    <div class="quota">Sisa kuota: <span id="quotaNum">HABIS</span></div>
+    <div class="quota-bar"><div class="quota-fill"></div></div>
 
     <div class="buttons">
-      <a class="btn btn-1" href="https://yowesjp.com/register?referral=yowesvip" target="_blank">Klaim Bonus kekalahan 100% </a>
-      <a class="btn btn-new" href="https://yowesjp.com/register?referral=yowesvip" target="_blank">Klaim Deposit 100% </a>
-      <a class="btn btn-2" href="https://yowesjp.com/register?referral=yowesvip" target="_blank">Daftar VIP Gratis</a>
-      <a class="btn btn-3" href="https://yowesjp.com/register?referral=yowesvip" target="_blank">Buat Akun Gacor</a>
+      <a class="btn btn-1" href="https://example.com/vip-member" target="_blank">Daftar VIP Member</a>
+      <a class="btn btn-2" href="https://example.com/id-vip-gacor" target="_blank">DAFTAR ID VIP GACOR</a>
+      <a class="btn btn-3" href="https://example.com/klaim-bonus" target="_blank">KLAIM BONUS 100%</a>
     </div>
 
     <h3>Testimoni Member</h3>
     <section class="testimonials">
       <div class="testi-wrapper">
-        <div class="testi"><div class="avatar"></div> "Baru daftar langsung dapat saldo!" — Andi Setiawan</div>
-        <div class="testi"><div class="avatar"></div> "Prosesnya gampang banget." — Sinta Prastiwi</div>
-        <div class="testi"><div class="avatar"></div> "Mantap, saldo langsung masuk." — Dedi Munandar</div>
-        <div class="testi"><div class="avatar"></div> "Terbukti, kuota makin menipis!" — Maya Laras</div>
+        <div class="testi"><div class="avatar"></div> "Baru daftar langsung dapat saldo!" — Andi</div>
+        <div class="testi"><div class="avatar"></div> "Prosesnya gampang banget." — Sinta</div>
+        <div class="testi"><div class="avatar"></div> "Mantap, saldo langsung masuk." — Dedi</div>
+        <div class="testi"><div class="avatar"></div> "Terbukti, kuota habis cepat!" — Maya</div>
         <div class="testi"><div class="avatar"></div> "Akhirnya kebagian promo!" — Rudi</div>
-        <div class="testi"><div class="avatar"></div> "Daftar cepat, saldo gratis cair." — Lita Nur Aini</div>
-        <div class="testi"><div class="avatar"></div> "Rekomendasi banget!" — Fajar Andika</div>
+        <div class="testi"><div class="avatar"></div> "Daftar cepat, saldo gratis cair." — Lita</div>
       </div>
     </section>
 
-    <footer>⚠️ Pastikan isi data yang benar, jika ada kecurangan saldo akan dianulir.</footer>
+    <footer>⚠️ Kuota habis. Promo ini sudah tidak tersedia.</footer>
   </div>
-
-  <script>
-    // Kuota animasi berkurang terus dari HABIS
-    let quota = HABIS;
-    const quotaNum = document.getElementById('quotaNum');
-    const quotaFill = document.getElementById('quotaFill');
-    const maxQuota = 356;
-
-    function updateQuota(){
-      if(quota > 0){
-        quota--;
-        quotaNum.textContent = quota;
-        quotaFill.style.width = (quota/maxQuota*100) + "%";
-      }
-    }
-    setInterval(updateQuota, 1000);
-  </script>
 </body>
 </html>
