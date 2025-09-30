@@ -1,199 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PROMO Gratis Saldo 25.000 — Launching Situs YOWESJP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="1_6F78r1iWWAAa_DFOiHEGwdSGjY8f0WyITRN77rYmY" />
+  <meta name="description" content="YOWESJP - Bandar togel online resmi terpercaya di Indonesia. Daftar dan login sekarang untuk menikmati pasaran togel lengkap, result cepat, dan jackpot setiap hari.">
+  <meta name="keywords" content="yowesjp, bandar togel resmi, togel terpercaya, togel online, daftar togel, login togel, togel aman, togel indonesia, result cepat">
+  <meta name="author" content="YOWESJP">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://gtatogel-vip.github.io/gtatogel/" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="YOWESJP - Bandar Togel Online Terpercaya & Resmi">
+  <meta property="og:description" content="Daftar dan login sekarang di YOWESJP - situs togel resmi terpercaya dengan pasaran terlengkap dan jackpot besar setiap hari.">
+  <meta property="og:image" content="https://gtatogel-vip.github.io/gtatogel/barner.png">
+  <meta property="og:url" content="https://gtatogel-vip.github.io/gtatogel/">
+  <meta property="og:type" content="website">
+  
+  <title>YOWESJP | Bandar Togel Online Resmi & Terpercaya - Daftar & Login Aman</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
   <style>
-    :root{
-      --bg:#f5f7fa;
-      --btn1:#1a3c6e;
-      --btnNew:#6a1b9a;
-      --btn2:#2e7d32;
-      --btn3:#c9a227;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{
-      font-family:'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      background:var(--bg);
-      color:#111;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      min-height:100vh;
-      padding:10px;
+    body {
+      background: #0a0f11;
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
     }
-    .card{
-      width:100%;
-      max-width:420px;
-      background:#fff;
-      border-radius:14px;
-      box-shadow:0 8px 25px rgba(0,0,0,.15);
-      padding:16px;
-      text-align:center;
+
+    .animated-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(60deg, #00e5d3, #e0e0e0, #ffe066, #0a0f11);
+      background-size: 400% 400%;
+      animation: bgmove 15s ease infinite;
+      z-index: -1;
+      opacity: 0.05;
     }
-    h1{
-      font-family:'Playfair Display', serif;
-      font-size:20px;
-      margin-bottom:12px;
-      font-weight:900;
-      color:#fff;
-      background:linear-gradient(90deg, #1a3c6e, #c9a227);
-      padding:12px 14px;
-      border-radius:12px;
-      line-height:1.4;
+
+    @keyframes bgmove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
-    .subinfo{
-      font-size:12px;
-      color:#333;
-      margin-bottom:10px;
+
+    .logo {
+      width: 120px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00e5d3;
+      z-index: 1;
     }
-    img{
-      width:90%;
-      max-width:320px;
-      border-radius:12px;
-      margin:0 auto 12px;
-      display:block;
-      box-shadow:0 4px 15px rgba(0,0,0,0.3);
+
+    .marquee, .seo-marquee {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      z-index: 1;
+      margin: 10px 0;
     }
-    .features{
-      font-size:13px;
-      text-align:left;
-      margin:0 auto 12px;
-      max-width:300px;
-      line-height:1.4;
+
+    .marquee span, .seo-marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 20s linear infinite;
+      color: #ffe066;
+      font-size: 14px;
     }
-    .features div{margin-bottom:4px}
-    .quota{
-      margin:8px 0;
-      font-weight:700;
-      font-size:13px;
+
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
     }
-    .quota-bar{
-      width:100%;
-      background:#ddd;
-      border-radius:6px;
-      overflow:hidden;
-      height:10px;
-      margin-bottom:10px;
+
+    .banner {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 30px rgba(0, 229, 211, 0.3);
+      z-index: 1;
     }
-    .quota-fill{
-      background:var(--btn1);
-      height:100%;
-      width:0%; /* kuota habis */
+
+    .btn {
+      display: block;
+      width: 100%;
+      max-width: 320px;
+      text-align: center;
+      padding: 16px;
+      margin: 12px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: pulse 2s infinite;
+      z-index: 1;
     }
-    .buttons{
-      display:flex;
-      flex-direction:column;
-      gap:8px;
-      margin-bottom:12px;
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
     }
-    .btn{
-      padding:8px 16px;
-      border-radius:999px;
-      font-weight:600;
-      font-size:13px;
-      text-decoration:none;
-      display:inline-block;
-      color:#fff;
-      transition:all .25s ease-in-out;
-      text-align:center;
+
+    .btn-daftar {
+      background: linear-gradient(to right, #00e5d3, #e0e0e0);
+      color: #000;
     }
-    .btn:hover{
-      transform:translateY(-2px);
-      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+
+    .btn-login {
+      background: linear-gradient(to right, #ffe066, #00e5d3);
+      color: #000;
     }
-    .btn-1{background:var(--btn1);}
-    .btn-new{background:var(--btnNew);}
-    .btn-2{background:var(--btn2);}
-    .btn-3{
-      background:var(--btn3);
-      color:#222;
-      animation:pulse 2.5s infinite;
-      text-transform:uppercase;
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
     }
-    @keyframes pulse{
-      0%{box-shadow:0 0 0 0 rgba(201,162,39,0.7)}
-      70%{box-shadow:0 0 0 12px rgba(201,162,39,0)}
-      100%{box-shadow:0 0 0 0 rgba(201,162,39,0)}
+
+    .seo-text {
+      max-width: 500px;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #ddd;
+      line-height: 1.6;
+      z-index: 1;
     }
-    h3{
-      font-family:'Playfair Display', serif;
-      font-size:14px;
-      margin:10px 0 6px;
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+      padding: 20px 0;
+      z-index: 1;
     }
-    .testimonials{
-      height:60px;
-      overflow:hidden;
-      position:relative;
+
+    h1 {
+      display: none;
     }
-    .testi-wrapper{
-      position:absolute;
-      top:0;
-      animation:scrollTesti 14s linear infinite;
-      width:100%;
-    }
-    .testi{
-      display:flex;
-      align-items:center;
-      gap:6px;
-      background:#f2f2f2;
-      color:#000;
-      padding:6px 10px;
-      border-radius:20px;
-      margin-bottom:6px;
-      font-size:12px;
-    }
-    .avatar{
-      width:20px;
-      height:20px;
-      border-radius:50%;
-      background:#ccc;
-      flex-shrink:0;
-    }
-    @keyframes scrollTesti{
-      0%{top:0}
-      100%{top:-100%}
-    }
-    footer{margin-top:6px;font-size:11px;color:#444}
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>PROMO GRATIS SALDO 25.000 SPESIAL LAUNCHING WEB YOWESJP</h1>
-    <p class="subinfo">⚠️ Kuota sudah HABIS. Promo ini tidak lagi tersedia.</p>
-    <img src="ChatGPT Image Sep 28, 2025, 07_39_05 PM.png" alt="Promo Spesial" />
+  <h1>YOWESJP - Bandar Togel Online Resmi Terpercaya</h1>
+  <div class="animated-bg"></div>
 
-    <div class="features">
-      <div>✅ Bonus Rp25.000</div>
-      <div>✅ Tanpa syarat deposit</div>
-      <div>✅ Bisa tarik bank/e-wallet</div>
-      <div>❌ Kuota HABIS</div>
-    </div>
+  <img src="logo.webp" alt="Logo YOWESJP" class="logo">
 
-    <div class="quota">Sisa kuota: <span id="quotaNum">HABIS</span></div>
-    <div class="quota-bar"><div class="quota-fill"></div></div>
-
-    <div class="buttons">
-      <a class="btn btn-1" href="https://example.com/vip-member" target="_blank">Daftar VIP Member</a>
-      <a class="btn btn-2" href="https://example.com/id-vip-gacor" target="_blank">DAFTAR ID VIP GACOR</a>
-      <a class="btn btn-3" href="https://example.com/klaim-bonus" target="_blank">KLAIM BONUS 100%</a>
-    </div>
-
-    <h3>Testimoni Member</h3>
-    <section class="testimonials">
-      <div class="testi-wrapper">
-        <div class="testi"><div class="avatar"></div> "Baru daftar langsung dapat saldo!" — Andi</div>
-        <div class="testi"><div class="avatar"></div> "Prosesnya gampang banget." — Sinta</div>
-        <div class="testi"><div class="avatar"></div> "Mantap, saldo langsung masuk." — Dedi</div>
-        <div class="testi"><div class="avatar"></div> "Terbukti, kuota habis cepat!" — Maya</div>
-        <div class="testi"><div class="avatar"></div> "Akhirnya kebagian promo!" — Rudi</div>
-        <div class="testi"><div class="avatar"></div> "Daftar cepat, saldo gratis cair." — Lita</div>
-      </div>
-    </section>
-
-    <footer>⚠️ Kuota habis. Promo ini sudah tidak tersedia.</footer>
+  <div class="marquee">
+    <span>Selamat datang di YOWESJP - Situs Togel Resmi & Terpercaya! Daftar Sekarang dan Raih Jackpot Setiap Hari!</span>
   </div>
-</body>
-</html>
+
+  <img src="barner.png" alt="Banner Promo YOWESJP" class="banner">
+
+  <a href="https://zeus.gtatogel.top/register?referral_code=aliong888" class="btn btn-daftar" target="_blank">DAFTAR</a>
+  <a href="https://zeus.gtatogel.top/register?referral_code=aliong888" class="btn btn-login" target="_blank">LOGIN</a>
+
+  <p class="seo-text">
+    YOWESJP adalah situs togel online terpercaya yang menyediakan layanan daftar dan login mudah, cepat, dan aman. Menyediakan pasaran togel terlengkap, result tercepat, serta sistem keamanan data terenkripsi. Bergabung sekarang dan nikmati promo serta jackpot setiap hari.
+  </p>
+
+  <div class="seo-marquee">
+    <span>YOWESJP | Situs Toge
